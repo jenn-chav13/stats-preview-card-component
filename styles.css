@@ -9,8 +9,7 @@
 }
 
 body {
-    /* font-family: 'Inter', sans-serif;
-    font-family: 'Lexend Deca', sans-serif;*/
+    font-family: 'Inter', sans-serif;
     background-color: var(--Very-dark-blue);
     color: var(--White);
 }
@@ -22,21 +21,69 @@ main {
     min-height: 100vh;
 }
 
+h1 {
+    font-size: 1.75rem;
+}
+
+h1 span {
+    color: var(--Soft-violet);
+}
+
+ul {
+    padding: unset;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+ul li {
+    list-style: none;
+    margin-top: 24px;
+}
+
 .stats-card {
     background-color: var(--Dark-desaturated-blue);
-    max-width: 400px;
+    max-width: 330px;
     width: 100%;
+    height: 775px;
+    border-radius: 10px;
 }
 
 .stats-card-image {
     background: url(./images/image-header-mobile.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 295px;
+    height: 240px;
+    border-radius: 10px 10px 0 0;
 }
 
 .stats-card-image-overlay {
     background: var(--Soft-violet);
     height: 100%;
+    mix-blend-mode: multiply;   
 }
 
+.stats-content {
+    padding-inline: 30px;
+    padding-block: 20px;
+    text-align: center;
+}
+
+.description {
+    font-size: 0.9375rem;
+    line-height: 1.5;
+    color: var(--Slightly-transparent-white);
+}
+
+.list-items .number {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.list-items .item {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    line-height: 2;
+    text-transform: uppercase;
+    color: var(--Slightly-transparent-white);
+}
